@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: Shopping_Cart
+    name: springboot-webapp
     env: java
     plan: free
-    buildCommand: mvn clean package
-    startCommand: java -jar target/webapp-0.0.1-SNAPSHOT.jar
+    buildCommand: "./mvnw clean package"
+    startCommand: "java -jar target/webapp-0.0.1-SNAPSHOT.jar"
     autoDeploy: true
